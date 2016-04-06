@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Get MLB Matchups</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+    
+    
+    
+
+  </head>
+
+<body>
+
+<div class="container-fluid">
+  <div class = "row text-center">
+    <h2 class="header">Historical matchup generator</h2>
+  </div>
+  <div class = "row text-center">
+    
+    <div id="matchHere" class = "col-xs-12 well message">
+      <div>
+      <form>
+        <input id="dateInput" type="text" placeholder="mm/dd/yyyy" /> <br />
+      </form>
+    </div>
+      <br />The matchup will go here
+    </div>
+  </div>
+  <div class = "row text-center">
+    <div class = "col-xs-12">
+      <button id = "getMatch" class = "btn btn-primary">
+        Who played?
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="/APIs/matchups.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.header {
+	font-family: "Lobster", Helvetica, Sans;
+}
+
+.codeNames {
+	font-family: "Slabo 27px", serif !important;
+}
+
+table {
+  width: 400px;
+}
+
+table, th, td {
+   border: 1px solid black;
+}
+
+.runs {
+  font-weight: bold;
+}
