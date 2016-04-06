@@ -2,9 +2,10 @@
   <head>
     <title>Get MLB Matchups</title>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="/APIs/matchups.css">
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
     
@@ -17,28 +18,54 @@
 
 <div class="container-fluid">
   <div class = "row text-center">
-    <h2 class="header">Historical matchup generator</h2>
+    <h2 class="header text-primary">Matchup Generator</h2>
   </div>
   <div class = "row text-center">
-    
-    <div id="matchHere" class = "col-xs-12 well message">
-      <div>
+    <div class ="col-xs-4"></div>
+    <div id="matchHere" class = "col-xs-12 well message text-center">
+      <div class ="col-xs-5 text-center"></div>
+      <div class ="col-xs-2 text-center">
       <form>
-        <input id="dateInput" type="text" placeholder="mm/dd/yyyy" /> <br />
+        Enter a date: <br /> <input id="dateInput" class="form-control text-center" type="text" placeholder="mm/dd/yyyy" /> <br />
+        Enter a team: <br /> <input id="teamInput" class="form-control text-center" type="text" placeholder="e.g WSH, NYY, BOS">
       </form>
-    </div>
-      <br />The matchup will go here
+      </div>
+      
     </div>
   </div>
   <div class = "row text-center">
-    <div class = "col-xs-12">
+    <div id="buttonHere" class = "col-xs-12">
       <button id = "getMatch" class = "btn btn-primary">
-        Who played?
+        Get matchup
       </button>
     </div>
   </div>
-</div>
+  
+  <div class="row">
+    <div class="col-xs-4">
+    </div>
+      <div id="scoreboard" class="col-xs-4 table-responsive">
 
+      </div>
+    <div class="col-xs-4">
+    </div>
+  </div>
+    
+  <div class="row text-center">
+    <div class="col-xs-4">
+    </div>
+      <div id="game_link" class="col-xs-4 table-responsive">
+
+      </div>
+    <div class="col-xs-4">
+    </div>
+  </div>
+</div>  
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script src="/APIs/matchups.js"></script>
 </body>
 </html>
