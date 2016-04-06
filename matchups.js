@@ -69,9 +69,7 @@ var getMatchUps = function() {
           sbContent += "<td class='runs'>" + e.data.game.away_team_runs + "</td>" + "<td>" + e.data.game.away_team_hits + "</td>" + "<td>" + e.data.game.away_team_errors + "</td></tr>";
           sbContent += "<tr><td>" + e.data.game.home_team_name + "</td>";
           for (var k = 0; k < innings; k++) {
-            //if (e.data.game.linescore[k].home_inning_runs !== "") {
               sbContent += "<td>" + e.data.game.linescore[k].home_inning_runs + "</td>";
-            //}
             if (e.data.game.linescore[k].home_inning_runs === "" && e.data.game.status === "Final") {
               sbContent += "<td>X</td>";
             }
